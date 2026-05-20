@@ -1,0 +1,2 @@
+# portfolio
+A portfolio of my work, primarily centered around artificial intelligence engineering, with room for whatever else I build along the way. It reflects how I approach problems, explore ideas, and turn concepts into working systems. Each project shows my growth through building, refining, and understanding how things work in real-world applications.
