@@ -1,0 +1,288 @@
+.admin-promo-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+  
+  .admin-success-message {
+    background-color: #E4F1E8;
+    color: #4A7C59;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: var(--radius-card);
+    margin-bottom: 20px;
+  }
+  
+  .admin-promo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
+  .admin-promo-header h1 {
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+    font-size: 1.75rem;
+    margin-bottom: 4px;
+  }
+  
+  .admin-promo-header p {
+    font-family: var(--font-body);
+    color: var(--color-text-secondary);
+    font-size: 14px;
+  }
+  
+  .admin-add-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border: none;
+    border-radius: var(--radius-card);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .admin-add-btn:hover {
+    background-color: var(--color-primary-dark);
+  }
+  
+  .admin-promo-table {
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    box-shadow: var(--shadow-subtle);
+    overflow: hidden;
+  }
+  
+  .admin-promo-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 0.9fr 1fr;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--color-accent);
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text-primary);
+    gap: 10px;
+  }
+  
+  .admin-promo-row:last-child {
+    border-bottom: none;
+  }
+  
+  .admin-promo-row-head {
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .admin-promo-code {
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+  
+  .admin-promo-status-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 100px;
+    width: fit-content;
+  }
+  
+  .admin-promo-status-tag.active {
+    background-color: #E4F1E8;
+    color: #4A7C59;
+  }
+  
+  .admin-promo-status-tag.inactive {
+    background-color: var(--color-accent);
+    color: var(--color-text-secondary);
+  }
+  
+  .admin-promo-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .admin-promo-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+  }
+  
+  .admin-promo-actions button:hover {
+    color: var(--color-primary);
+  }
+  
+  .admin-promo-delete:hover {
+    color: #B3261E !important;
+  }
+  
+  .admin-delete-confirm {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  
+  .admin-delete-confirm-yes {
+    padding: 4px 10px;
+    background-color: #B3261E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .admin-delete-confirm-yes:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .admin-delete-confirm-no {
+    padding: 4px 10px;
+    background: none;
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .admin-promo-status {
+    text-align: center;
+    padding: 48px 0;
+    font-family: var(--font-body);
+    color: var(--color-text-secondary);
+  }
+  
+  .admin-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(28, 28, 30, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    padding: 24px;
+  }
+  
+  .admin-modal {
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    max-width: 440px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 28px;
+  }
+  
+  .admin-promo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .admin-modal-header h2 {
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+    font-size: 1.4rem;
+  }
+  
+  .admin-modal-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+  }
+  
+  .admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .admin-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+  
+  .admin-form input {
+    padding: 10px 12px;
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-card);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .admin-form-checkbox {
+    flex-direction: row !important;
+    align-items: center;
+    gap: 8px !important;
+  }
+  
+  .admin-form-checkbox input {
+    width: auto;
+  }
+  
+  .admin-form-error {
+    background-color: #FDEDED;
+    color: #B3261E;
+    font-size: 13px;
+    padding: 10px 14px;
+    border-radius: var(--radius-card);
+  }
+  
+  .admin-form-submit {
+    padding: 12px;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border: none;
+    border-radius: var(--radius-card);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .admin-form-submit:hover {
+    background-color: var(--color-primary-dark);
+  }
+  
+  .admin-form-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 700px) {
+    .admin-promo-row {
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+  
+    .admin-promo-row-head {
+      display: none;
+    }
+  }

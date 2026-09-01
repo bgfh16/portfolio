@@ -1,0 +1,83 @@
+.payment-status-page {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--color-background);
+  }
+  
+  .payment-status-card {
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    box-shadow: var(--shadow-subtle);
+    padding: 3rem 2.5rem;
+    max-width: 440px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .payment-status-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .payment-status-icon.verifying {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+  }
+  
+  .payment-status-icon.success {
+    background-color: #E4F1E8;
+    color: #4A7C59;
+  }
+  
+  .payment-status-icon.failed {
+    background-color: #FDEDED;
+    color: #B3261E;
+  }
+  
+  .payment-status-card h1 {
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+  
+  .payment-status-card p {
+    font-family: var(--font-body);
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .payment-status-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border-radius: var(--radius-card);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .payment-status-link:hover {
+    background-color: var(--color-primary-dark);
+  }
+  
+  .spin {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }

@@ -1,0 +1,297 @@
+/* styling for the individual hotel detail page */
+
+.detail-status {
+  text-align: center;
+  padding: 80px 24px;
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+}
+
+/* hero section */
+
+.detail-hero {
+  position: relative;
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 48px;
+}
+
+.detail-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(28, 28, 30, 0.45);
+}
+
+.detail-hero-overlay {
+  position: relative;
+  z-index: 2;
+  color: var(--color-surface);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.detail-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-surface);
+  opacity: 0.9;
+}
+
+.detail-back-link:hover {
+  opacity: 1;
+}
+
+.detail-hero-overlay h1 {
+  font-size: 40px;
+  color: var(--color-surface);
+  margin-bottom: 8px;
+}
+
+.detail-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 15px;
+}
+
+/* main content layout */
+
+.detail-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 48px;
+}
+
+.detail-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.detail-rating span {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-left: 6px;
+}
+
+.detail-main h2 {
+  font-size: 22px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.detail-main h2:first-of-type {
+  margin-top: 0;
+}
+
+.detail-description {
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.facility-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.facility-tag {
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 8px 16px;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-card);
+  color: var(--color-text-primary);
+}
+
+.sustainability-box {
+  display: flex;
+  gap: 14px;
+  margin-top: 32px;
+  padding: 20px;
+  background-color: var(--color-background);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-accent);
+}
+
+.sustainability-box svg {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.sustainability-box h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.sustainability-box p {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* sidebar */
+
+.detail-sidebar {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  height: fit-content;
+  position: sticky;
+  top: 24px;
+}
+
+.sidebar-price-label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+}
+
+.sidebar-price {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.sidebar-price span {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.sidebar-button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border: none;
+  border-radius: var(--radius-card);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(44, 63, 92, 0.35);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar-button:hover {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 6px 14px rgba(44, 63, 92, 0.45);
+}
+
+.detail-services-note {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
+  margin-top: -8px;
+}
+
+.detail-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.detail-service-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-card);
+}
+
+.detail-service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.detail-service-info {
+  flex: 1;
+}
+
+.detail-service-name {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+
+.detail-service-desc {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.detail-service-price {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+/* mobile responsiveness */
+
+@media (max-width: 900px) {
+  .detail-content {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .detail-hero-overlay h1 {
+    font-size: 28px;
+  }
+
+  .detail-hero {
+    padding: 24px;
+  }
+
+  .detail-content {
+    padding: 32px 20px 60px;
+  }
+}

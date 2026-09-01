@@ -1,0 +1,75 @@
+/* styling for individual hotel cards used across home, listings etc */
+
+.hotel-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    box-shadow: var(--shadow-subtle);
+    transition: transform 0.2s ease;
+  }
+  
+  .hotel-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .hotel-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .hotel-card-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hotel-card-name {
+    font-size: 19px;
+    margin-bottom: 6px;
+  }
+  
+  .hotel-card-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    margin-bottom: 10px;
+  }
+  
+  .hotel-card-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-accent);
+  }
+  
+  .hotel-card-rating-label {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    margin-left: 4px;
+  }
+  
+  .hotel-card-price {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text-secondary);
+  }
+  
+  .hotel-card-price span {
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 16px;
+  }
+
+  a.hotel-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }

@@ -1,0 +1,112 @@
+.email-confirmed-page {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--color-background);
+  }
+  
+  .email-confirmed-card {
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    box-shadow: var(--shadow-subtle);
+    padding: 3rem 2.5rem;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .email-confirmed-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .email-confirmed-icon .icon-mail,
+  .email-confirmed-icon .icon-check {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  .email-confirmed-icon .icon-check {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  
+  .email-confirmed-icon.is-confirmed .icon-mail {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  
+  .email-confirmed-icon.is-confirmed .icon-check {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    color: #4A7C59;
+  }
+  
+  .email-confirmed-icon.is-confirmed {
+    background-color: #E4F1E8;
+  }
+  
+  .email-confirmed-card h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-text-primary);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .email-confirmed-card p {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .email-confirmed-link {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 2px;
+    transition: color 0.2s ease;
+  }
+  
+  .email-confirmed-link:hover {
+    color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+  }
+
+  .email-confirmed-redirect {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    font-style: italic;
+    margin-bottom: 12px;
+  }
+  
+  @media (max-width: 480px) {
+    .email-confirmed-card {
+      padding: 2rem 1.5rem;
+    }
+  
+    .email-confirmed-icon {
+      width: 72px;
+      height: 72px;
+    }
+  
+    .email-confirmed-card h1 {
+      font-size: 1.5rem;
+    }
+  }

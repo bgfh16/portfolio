@@ -1,0 +1,237 @@
+.admin-res-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.admin-success-message {
+  background-color: #E4F1E8;
+  color: #4A7C59;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 18px;
+  border-radius: var(--radius-card);
+  margin-bottom: 20px;
+}
+
+.admin-res-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.admin-res-header h1 {
+  font-family: var(--font-display);
+  color: var(--color-text-primary);
+  font-size: 1.75rem;
+  margin-bottom: 4px;
+}
+
+.admin-res-header p {
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+.admin-res-filter {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.admin-res-filter label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.admin-res-filter input {
+  padding: 8px 10px;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-card);
+  font-family: var(--font-body);
+  font-size: 13px;
+}
+
+.admin-res-clear-filter {
+  padding: 8px 14px;
+  background: none;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-card);
+  font-family: var(--font-body);
+  font-size: 13px;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.admin-res-table {
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  box-shadow: var(--shadow-subtle);
+  overflow: hidden;
+}
+
+.admin-res-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1.1fr 0.8fr 1.2fr 0.9fr 0.8fr 1.1fr;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--color-accent);
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text-primary);
+  gap: 10px;
+}
+
+.admin-res-ref {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-primary);
+}
+
+.admin-res-row:last-child {
+  border-bottom: none;
+}
+
+.admin-res-row-head {
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admin-res-row span svg {
+  vertical-align: middle;
+  margin-right: 4px;
+  color: var(--color-text-secondary);
+}
+
+.admin-res-guest-name {
+  display: block;
+  font-weight: 600;
+}
+
+.admin-res-guest-email {
+  display: block;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.admin-res-booked-on {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.admin-res-status-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 100px;
+  width: fit-content;
+}
+
+.admin-res-status-tag.confirmed {
+  background-color: #E4F1E8;
+  color: #4A7C59;
+}
+
+.admin-res-status-tag.cancelled {
+  background-color: var(--color-accent);
+  color: var(--color-text-secondary);
+}
+
+.admin-res-status-tag.pending {
+  background-color: #FFF4E0;
+  color: #B8860B;
+}
+
+.admin-res-cancel-btn {
+  padding: 6px 14px;
+  background: none;
+  border: 1px solid #B3261E;
+  color: #B3261E;
+  border-radius: var(--radius-card);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-res-cancel-btn:hover {
+  background-color: #FDEDED;
+}
+
+.admin-res-confirm {
+  display: flex;
+  gap: 6px;
+}
+
+.admin-res-confirm-yes {
+  padding: 5px 10px;
+  background-color: #B3261E;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-res-confirm-yes:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-res-confirm-no {
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.admin-res-cancelled-label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.admin-res-status {
+  text-align: center;
+  padding: 48px 0;
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+}
+
+.admin-res-no-results {
+  text-align: center;
+  padding: 32px 0;
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 900px) {
+  .admin-res-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .admin-res-row-head {
+    display: none;
+  }
+}

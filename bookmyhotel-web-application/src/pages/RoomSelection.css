@@ -1,0 +1,192 @@
+/* styling for the room selection page */
+
+.room-selection-status {
+    text-align: center;
+    padding: 80px 24px;
+    font-family: var(--font-body);
+    color: var(--color-text-secondary);
+  }
+  
+  .room-selection-header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 24px 24px;
+  }
+  
+  .room-selection-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text-secondary);
+  }
+  
+  .room-selection-back:hover {
+    color: var(--color-primary);
+  }
+  
+  .room-selection-header h1 {
+    font-size: 30px;
+    margin-bottom: 4px;
+  }
+  
+  .room-selection-header p {
+    font-family: var(--font-body);
+    color: var(--color-text-secondary);
+    font-size: 14px;
+  }
+  
+  /* room list */
+  
+  .room-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .room-item {
+    display: grid;
+    grid-template-columns: 260px 1fr 200px;
+    gap: 24px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    box-shadow: var(--shadow-subtle);
+  }
+  
+  .room-item-image {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    object-fit: cover;
+  }
+  
+  .room-item-content {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .room-item-content h3 {
+    font-size: 19px;
+  }
+  
+  .room-item-description {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+  }
+  
+  .room-item-meta {
+    display: flex;
+    gap: 16px;
+    margin-top: 4px;
+  }
+  
+  .room-item-capacity {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-text-secondary);
+  }
+  
+  .room-item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .room-item-tag {
+    font-family: var(--font-body);
+    font-size: 12px;
+    padding: 6px 12px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-card);
+    color: var(--color-text-primary);
+  }
+  
+  .room-item-booking {
+    padding: 20px 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    gap: 12px;
+  }
+  
+  .room-item-price {
+    font-family: var(--font-display);
+    font-size: 22px;
+    color: var(--color-primary);
+  }
+  
+  .room-item-price span {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-text-secondary);
+  }
+  
+  .room-item-button {
+    padding: 12px 24px;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border: none;
+    border-radius: var(--radius-card);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(44, 63, 92, 0.35);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .room-item-button:hover {
+    background-color: var(--color-primary-dark);
+    box-shadow: 0 6px 14px rgba(44, 63, 92, 0.45);
+  }
+  
+  /* mobile responsiveness */
+  
+  @media (max-width: 800px) {
+    .room-item {
+      grid-template-columns: 1fr;
+    }
+  
+    .room-item-image {
+      height: 220px;
+    }
+  
+    .room-item-content {
+      padding: 20px;
+    }
+  
+    .room-item-booking {
+      padding: 0 20px 20px;
+      align-items: flex-start;
+      text-align: left;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }

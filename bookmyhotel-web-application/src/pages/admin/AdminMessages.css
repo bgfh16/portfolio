@@ -1,0 +1,110 @@
+.admin-msg-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+  
+  .admin-msg-header {
+    margin-bottom: 32px;
+  }
+  
+  .admin-msg-header h1 {
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+    font-size: 1.75rem;
+    margin-bottom: 4px;
+  }
+  
+  .admin-msg-header p {
+    font-family: var(--font-body);
+    color: var(--color-text-secondary);
+    font-size: 14px;
+  }
+  
+  .admin-msg-empty {
+    font-family: var(--font-body);
+    color: var(--color-text-secondary);
+    text-align: center;
+    padding: 48px 0;
+  }
+  
+  .admin-msg-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .admin-msg-card {
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    box-shadow: var(--shadow-subtle);
+    padding: 20px;
+  }
+  
+  .admin-msg-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    gap: 12px;
+  }
+  
+  .admin-msg-subject {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--color-text-primary);
+  }
+  
+  .admin-msg-from {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    margin-top: 2px;
+  }
+  
+  .admin-msg-date {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+  }
+  
+  .admin-msg-body {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+  
+  .admin-msg-reply {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  
+  .admin-msg-reply:hover {
+    color: var(--color-primary-dark);
+  }
+  
+  .admin-msg-status {
+    text-align: center;
+    padding: 48px 0;
+    font-family: var(--font-body);
+    color: var(--color-text-secondary);
+  }
+  
+  @media (max-width: 600px) {
+    .admin-msg-top {
+      flex-direction: column;
+    }
+  }

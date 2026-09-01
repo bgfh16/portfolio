@@ -1,0 +1,54 @@
+/* 
+  This is the global design system for bookmyhotel.
+  It will be known as "desert pearl" - a warm, boutique hotel feel.
+  Every color, font and spacing value used across the app will
+  come from these variables so we only ever need to change things
+  in one place.
+*/
+
+:root {
+  /* colors */
+  --color-primary: #3D5A80;      /* slate blue - main brand color */
+  --color-primary-dark: #2C3F5C; /* deep navy - used for hover states etc */
+  --color-background: #FAF8F4;   /* warm off white - page background */
+  --color-surface: #FFFFFF;      /* pure white - cards, forms, navbar */
+  --color-text-primary: #1C1C1E; /* rich charcoal - main text color */
+  --color-text-secondary: #6B6560; /* warm grey - secondary/lighter text */
+  --color-accent: #E8E0D0;       /* sand - borders and subtle accents */
+
+  /* fonts */
+  --font-display: 'Playfair Display', serif; /* used for headings */
+  --font-body: 'Inter', sans-serif;          /* used for body text and UI */
+
+  /* layout */
+  --radius-card: 8px;   /* border radius for cards, buttons, inputs */
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.08); /* soft card shadow */
+}
+
+/* reset some default browser styling so things look consistent */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--color-text-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  overflow-x: hidden;
+}

@@ -1,0 +1,194 @@
+.contact-page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    padding: 56px 24px;
+  }
+  
+  .contact-page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(28, 28, 30, 0.45);
+  }
+  
+  .contact-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  
+  .contact-info {
+    flex: 0.8;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-card);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem 2rem;
+  }
+  
+  .contact-info h1 {
+    font-family: var(--font-display);
+    color: var(--color-surface);
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  
+  .contact-intro {
+    font-family: var(--font-body);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+  
+  .contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--color-surface);
+    margin-bottom: 16px;
+  }
+  
+  .contact-form-card {
+    flex: 1.2;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-card);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem 2rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contact-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-surface);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 14px;
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-card);
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text-primary);
+    font-weight: 400;
+    background-color: var(--color-surface);
+    resize: vertical;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+  
+  .contact-error {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: #B3261E;
+    background-color: #FDEDEC;
+    padding: 10px 14px;
+    border-radius: var(--radius-card);
+  }
+  
+  .contact-submit {
+    padding: 14px;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border: none;
+    border-radius: var(--radius-card);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(44, 63, 92, 0.35);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .contact-submit:hover:not(:disabled) {
+    background-color: var(--color-primary-dark);
+    box-shadow: 0 6px 14px rgba(44, 63, 92, 0.45);
+  }
+  
+  .contact-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .contact-success {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .contact-success h2 {
+    font-family: var(--font-display);
+    color: var(--color-surface);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-success p {
+    font-family: var(--font-body);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+  }
+  
+  .contact-send-another {
+    margin-top: 20px;
+    padding: 10px 24px;
+    background: none;
+    border: 1px solid var(--color-surface);
+    color: var(--color-surface);
+    border-radius: var(--radius-card);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .contact-send-another:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 24px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .contact-info,
+    .contact-form-card {
+      padding: 32px 24px;
+    }
+  }

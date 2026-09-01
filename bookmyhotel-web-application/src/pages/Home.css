@@ -1,0 +1,339 @@
+/* 
+  styling for our home/landing page
+  using the desert pearl variables from index.css
+*/
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  min-height: 600px;
+  padding: 64px 24px;
+  background-image: url('https://images.unsplash.com/photo-1561501900-3701fa6a0864?w=1600&q=80&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(28, 28, 30, 0.35);
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--color-surface);
+  padding: 0 24px;
+  max-width: 700px;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--color-surface);
+}
+
+.hero-subtitle {
+  font-family: var(--font-body);
+  font-size: 15px;
+  margin-bottom: 32px;
+  color: var(--color-surface);
+}
+
+/* FROSTED GLASS SEARCH BAR */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: var(--radius-card);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-surface);
+  padding: 12px 16px;
+  border-radius: var(--radius-card);
+  flex: 1;
+  color: var(--color-text-secondary);
+}
+
+.search-field input {
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+  font-size: 14px;
+  width: 100%;
+  color: var(--color-text-primary);
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border: none;
+  border-radius: var(--radius-card);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(44, 63, 92, 0.35);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 6px 14px rgba(44, 63, 92, 0.45);
+}
+
+/* USPS SECTION */
+.usps {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 64px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.usp-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  color: var(--color-primary);
+  max-width: 260px;
+}
+
+.usp-item h3 {
+  font-size: 17px;
+  color: var(--color-text-primary);
+}
+
+.usp-item p {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+/* SHOWCASE SECTION */
+.showcase {
+  padding: 40px 48px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.showcase h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.showcase p {
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+}
+
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 260px));
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.showcase-loading {
+  text-align: center;
+  padding: 48px 0;
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+}
+
+.showcase-view-all {
+  display: inline-block;
+  margin-top: 56px;
+  padding: 12px 32px;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border-radius: var(--radius-card);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.showcase-view-all:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+  padding: 40px 48px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.testimonial-card {
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  box-shadow: var(--shadow-subtle);
+  padding: 28px 24px;
+  text-align: left;
+  flex: 1 1 320px;
+  max-width: 360px;
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 12px;
+}
+
+.testimonial-comment {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.testimonial-meta {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+/* CLOSING CALL TO ACTION BAND */
+.cta-band {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1757889692998-d851b95f912e?w=1600&q=80&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.cta-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(61, 90, 128, 0.75);
+}
+
+.cta-band h2,
+.cta-band p,
+.cta-band-button {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-band h2 {
+  font-family: var(--font-display);
+  color: var(--color-surface);
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.cta-band p {
+  font-family: var(--font-body);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.cta-band-button {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  border-radius: var(--radius-card);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.cta-band-button:hover {
+  background-color: var(--color-accent);
+}
+
+@media (max-width: 1100px) {
+  .hotel-grid {
+    grid-template-columns: repeat(2, minmax(0, 260px));
+  }
+}
+
+@media (max-width: 600px) {
+  .hotel-grid {
+    grid-template-columns: minmax(0, 300px);
+  }
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .hero {
+    height: 500px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-button {
+    justify-content: center;
+  }
+
+  .usps {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 48px 24px;
+  }
+
+  .showcase {
+    padding: 32px 24px 56px;
+  }
+}
