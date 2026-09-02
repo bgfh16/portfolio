@@ -47,7 +47,7 @@ function Footer() {
 
       {/* bottom copyright bar */}
       <div className="footer-bottom">
-        <p>© 2026 BookMyHotel. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} BookMyHotel. All rights reserved.</p>
       </div>
     </footer>
   )
