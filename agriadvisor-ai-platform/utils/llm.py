@@ -1,4 +1,4 @@
-"""One place for every call to the AI (step 14).
+"""One place for every call to the AI
 
 The pages call ask(messages, purpose) and get the reply text back. They do not need
 to know whether Ollama (on your own computer) or Groq (online) is behind it.
