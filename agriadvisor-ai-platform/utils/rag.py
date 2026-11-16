@@ -1,4 +1,4 @@
-"""Builds and searches the AgriAdvisor knowledge base index (RAG, step B).
+"""Builds and searches the AgriAdvisor knowledge base index
 
 Two jobs:
   1. build_index()  - reads knowledge_base.md, turns every chunk into numbers
