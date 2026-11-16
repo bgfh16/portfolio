@@ -1,8 +1,14 @@
 # AgriAdvisor
 
-AgriAdvisor is a web app that gives small-scale farmers in Nigeria practical farming advice. Farmers can ask questions in a chat, upload a photo of a crop to get a diagnosis, get crop suggestions for their state and season, and browse a pest and disease guide. Answers are grounded in a curated Nigerian farming knowledge base.
+AgriAdvisor is a web app that gives small-scale farmers in Nigeria practical farming advice. Farmers can ask questions in a chat, upload a photo of a crop to get a diagnosis, get crop suggestions for their state and season, and browse a pest and disease guide. Answers are grounded in a curated Nigerian farming knowledge base. Built as a final-year project for my BEng (Hons) Software Engineering Top-Up.
 
-Built as a final-year project for the BEng (Hons) Software Engineering Top-Up.
+**Module:** SWE6010 Undergraduate Project
+
+**Student:** Daniel Agbonmeire Oyakhire
+
+**Student Number:** 2533954
+
+**Live App:** [Link will be added after deployment]
 
 ## Features
 
