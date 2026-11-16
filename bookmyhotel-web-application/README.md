@@ -8,7 +8,7 @@ A full-stack hotel booking platform built for a Dubai-based operator managing fo
 
 **Student Number:** 2533954
 
-**Live Deployment:** https://bookmyhotel-2533954.netlify.app/
+**Live App:** https://bookmyhotel-2533954.netlify.app/
 
 ---
 
