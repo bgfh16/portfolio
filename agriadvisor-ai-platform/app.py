@@ -1,3 +1,10 @@
+import os
+from pathlib import Path
+# Run from this file's own folder, so paths like "assets/style.css" work no matter
+# where the app is started (for example from the repo root on Streamlit Cloud).
+os.chdir(Path(__file__).resolve().parent)
+import streamlit as st
+from utils.styling import load_css
 import streamlit as st
 from utils.styling import load_css
 from views.homepage import show_homepage
