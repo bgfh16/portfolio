@@ -6,7 +6,7 @@ A full-stack hotel booking platform built for a Dubai-based operator managing fo
 
 **Student:** Daniel Agbonmeire Oyakhire
 
-**Student Number:** 2533954
+**Programme:** BEng (Hons) Software Engineering Top-Up, University of Greater Manchester
 
 **Live App:** https://bookmyhotel-2533954.netlify.app/
 
