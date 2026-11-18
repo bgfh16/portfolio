@@ -38,7 +38,6 @@ Image Diagnosis sends the (resized) photo to a vision model on Groq.
 | Accounts, database and image storage | Supabase (authentication, Postgres with row-level security, storage) |
 | Retrieval | LangChain, FAISS, fastembed, BM25 keyword search |
 | Language and vision models | Groq (production); Ollama (optional, local) |
-| Hosting | Streamlit Community Cloud |
 
 Models are listed in one place, `utils/llm.py`. Each task (chat, recommendations, titles, vision) has a list of models and falls back to the next one if a model is rate-limited or fails.
 
@@ -99,7 +98,7 @@ python utils/llm.py image "photos/crop.jpg"                 # test the vision mo
 
 ## Configuration
 
-Secrets live in `.streamlit/secrets.toml` locally and in the app settings on Streamlit Community Cloud. They are never committed.
+Secrets live in `.streamlit/secrets.toml` locally and are never committed.
 
 | Secret | Purpose |
 |---|---|
@@ -108,10 +107,6 @@ Secrets live in `.streamlit/secrets.toml` locally and in the app settings on Str
 | Supabase URL and key | Connection to the Supabase project |
 
 To use Ollama locally, install Ollama, pull the models named in `utils/llm.py`, and set `AI_PROVIDER = "ollama"`.
-
-## Deployment
-
-The app deploys from a GitHub repository to Streamlit Community Cloud (Python 3.11). Commit `data/faiss_index` with the app so the server does not have to rebuild it. Add the secrets in the app's settings. The embedding model is downloaded on the first search after the server starts.
 
 ## Known limitations
 
