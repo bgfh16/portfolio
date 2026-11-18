@@ -8,8 +8,6 @@ AgriAdvisor is a web app that gives small-scale farmers in Nigeria practical far
 
 **Programme:** BEng (Hons) Software Engineering Top-Up, University of Greater Manchester
 
-**Live App:** [Link will be added after deployment]
-
 ## Features
 
 - **Chat**: ask farming questions and get answers based on the knowledge base. Conversations are saved, titled automatically and can be continued later.
