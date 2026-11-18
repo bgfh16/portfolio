@@ -40,7 +40,6 @@ if "logged_in" not in st.session_state:
     st.session_state["logged_in"] = False
     access_token = st.context.cookies.get("sb_access_token")
     refresh_token = st.context.cookies.get("sb_refresh_token")
-    print("[AUTH] cookies seen:", bool(access_token), bool(refresh_token))
     network_problem = False
 
     if access_token and refresh_token:
